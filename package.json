@@ -1,0 +1,26 @@
+{
+  "name": "TodoApp",
+  "version": "1.0.0",
+  "description": "Nodejs app with basic todo features",
+  "main": "index.js",
+  "author": "Akash Pal <akashpa93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "concurrently \"tsc -w\" \"nodemon dist/js/app.js\""
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9",
+    "typescript": "^4.1.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/mongoose": "^5.10.3",
+    "@types/node": "^14.14.19",
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
